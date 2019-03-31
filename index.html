@@ -1,7 +1,122 @@
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <html>
-    <head>
-    <title> Harry Potter Survey Form</title>
+  <head>
+    <title>Survey Form</title>
   </head>
-  <div id="title">
   <body>
+  <h1 id="title">Survey Form</h1>
+  <div id="form outer">
+    <p id="description">How can we improve?</p>
+    <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+    <fieldset>
+      <legend>Your Details:</legend>
+      <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">*Name: </label>
+      </div>
+        <div class="rightTab">
+        <input type="text" name="name" size="25" maxlength="100" id="name" class="input-field" placeholder=" Enter your name" required>
+      </div>
+    </div>
+      <br>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email:</label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" size="30" maxlength="100" required placeholder=" Enter your Email">
+      </div>
+    </div>
+      <br>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder=" Age">
+      </div>
+    </div>
+        <br>
+      <label>Gender:
+        <input id="female" type="radio" name="gender" value="Female">
+          <label for="female">Female</label>
+        <input id="male" type="radio" name="gender" value="m">
+          <label for="male">Male</label>
+      <input id="No" type="radio" name="gender" value="n">
+          <label for="No">Do Not Wish To Identify</label>
+      <input id="other" type="radio" name="gender" value="o"/>
+          <label for="other">Other: <input type="text" placeholder=" Idenify at your leisure"class="input-field"</label><br>
+       </fieldset>  
+      <br>
+   <fieldset>
+     <legend>Your Review</legend>
+     <div class="rowTab">
+      <div class="labels">
+        <label for="preferences" required>* Please select your interests for joining this community. (Check all that apply): </label>
+      </div>
+     <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end Projects</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end Projects</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Data Visualization</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Challenges</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Open Source Community</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Gitter help rooms</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Videos</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">City Meetups</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Wiki</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Forum</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Additional Courses</label></li>
+        </ul>
+      </div>
+    </div>
+     <br>
+      <label for="hear-about">
+         How did you hear about us?
+       </label>
+       <select id="dropdown" id="hear-about">
+         <option disabled selected value>Select One</option>
+         <option value="google">Google</option>
+         <option value="Friend">Friend</option>
+         <option value="advert">Advert</option>
+         <option value="other">Other</option>
+       </select>
+     </p>
+     <p>
+       Would you visit again?
+       <br>
+       <label>
+         <input type="radio" name="rating" value="yes" />
+         Yes
+       </label>
+       <label>
+         <input type="radio" name="rating" value="no" />
+         No
+       </label>
+       <label>
+         <input type="radio" name="rating" value="maybe so" />
+         Maybe so
+       </label>
+     </p>
+     <p>
+       <label for="comments">
+         Comments:
+       </label>
+       <br>
+       <textarea rows="4" cols="40" id="comments">Enter comments here...
+       </textarea>
+     </p>
+     <label>
+       <input type="checkbox" name="subscribe" value="subscribe"/>
+       Sign me up for email updates
+     </label>
+     <br>
+     <br>
+      <input type="submit" id="submit" class="submit" value="submit" />
+        </fieldset>
+         </form>
+    </div> 
+   <footer>
+     &copy; 2019 Asha Coleman
+    </footer>
+   </body>
+</html>
