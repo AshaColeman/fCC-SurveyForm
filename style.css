@@ -1,4 +1,4 @@
-/html,
+html,
 body{
   font-family: Times, Arial, sans-serif;
   background-color: #FFF;
@@ -30,7 +30,7 @@ legend {
 }
 .input-field{
   background-color: #EDECF2;
-  color: #FFF;
+  color: #434037;
 }
 .labels {
   float: left;
@@ -55,4 +55,11 @@ legend {
   margin-top: 15px;
   border: 1px solid #c0c0c0;
   border-radius: 2px;
+}
+textarea{
+  color: #434037;
+}
+footer{
+  text-align: center;
+  padding: 10px;
 }
