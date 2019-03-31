@@ -1,0 +1,58 @@
+/html,
+body{
+  font-family: Times, Arial, sans-serif;
+  background-color: #FFF;
+  color: #434037;
+}
+h1{
+  color: #434037;
+  font-size: 40px;
+  text-align: center;
+}
+#description{
+  text-align: center;
+  text-size: 45px;
+  font-weight: bold;
+  color: #434037;
+}
+fieldset{
+  width: 660px;
+  border: 2px solid #0088DD;
+  padding: 20px;
+  background-color: #9FBFD6;
+  text-align: left;
+  color: #434037;
+}
+legend {
+    background-color: #2E5282;
+    color: #fff;
+    padding: 3px 6px;
+}
+.input-field{
+  background-color: #EDECF2;
+  color: #FFF;
+}
+.labels {
+  float: left;
+}
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+}
+.dropdown{
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
